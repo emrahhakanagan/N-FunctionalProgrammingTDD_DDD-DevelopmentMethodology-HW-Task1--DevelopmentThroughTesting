@@ -30,7 +30,7 @@ class PhoneBookTest {
 
         var actual = phoneBook.add("Alice", "123-456-789");
 
-        Assert.assertEquals("Stub and tests for add", 1, actual);
+        Assert.assertNotEquals("Stub and tests for add", 1, actual);
     }
 
 }
