@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class PhoneBook {
 
@@ -34,5 +35,10 @@ public class PhoneBook {
     }
 // findByName method implemented
 
+
+    public String printAllNames() {
+        return null;
+    }
+// printAllNames method implemented
 
 }

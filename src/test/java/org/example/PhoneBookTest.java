@@ -75,4 +75,26 @@ class PhoneBookTest {
 
         Assert.assertNotEquals("Stub and tests for findByName",true, actual);
     }
+
+
+    // Тесты для метода printAllNames
+    @Test
+    public void test_PrintAllNamesShowsAllNames_InAlphabeticalOrder() {
+        phoneBook.add("Charlie", "321-654-987");
+        phoneBook.add("Alice", "123-456-789");
+        phoneBook.add("Bob", "987-654-321");
+
+        var actual = phoneBook.printAllNames();
+
+        Assert.assertEquals("Stub and tests for findByName", "Alice, Bob, Charlie", actual);
+    }
+
+
+    @Test
+    public void test_PrintAllNamesShowsAllNames_ShouldBeNull() {
+        var actual = phoneBook.printAllNames();
+
+        Assert.assertEquals("Stub and tests for findByName","Alice", actual);
+    }
+
 }
