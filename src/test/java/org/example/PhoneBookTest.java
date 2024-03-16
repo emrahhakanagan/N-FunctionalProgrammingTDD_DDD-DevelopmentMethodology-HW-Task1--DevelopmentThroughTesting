@@ -54,4 +54,25 @@ class PhoneBookTest {
 
         Assert.assertNotEquals("Stub and tests for findByNumber", expected, actual);
     }
+
+
+    // Тесты для метода findByName
+    @Test
+    public void test_FindByName_FindsCorrectName() {
+        phoneBook.add("Alice", "123-456-789");
+
+        var actual = phoneBook.findByName("Alice");
+
+        Assert.assertEquals("Stub and tests for findByName", true, actual);
+    }
+
+
+    @Test
+    public void test_FindByName_FindsNotCorrectName() {
+        phoneBook.add("Alice", "123-456-789");
+
+        var actual = phoneBook.findByName("Petr");
+
+        Assert.assertEquals("Stub and tests for findByName",true, actual);
+    }
 }

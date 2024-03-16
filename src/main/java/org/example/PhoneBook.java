@@ -29,5 +29,10 @@ public class PhoneBook {
     }
 // findByNumber method implemented
 
+    public Boolean findByName(String name) {
+        return false;
+    }
+// findByName method implemented
+
 
 }
