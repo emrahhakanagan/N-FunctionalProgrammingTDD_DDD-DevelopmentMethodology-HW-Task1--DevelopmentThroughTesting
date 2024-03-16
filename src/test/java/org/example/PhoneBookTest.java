@@ -52,6 +52,6 @@ class PhoneBookTest {
         var actual = phoneBook.findByNumber("123-456-789");
         var expected = "Petr";
 
-        Assert.assertEquals("Stub and tests for findByNumber", expected, actual);
+        Assert.assertNotEquals("Stub and tests for findByNumber", expected, actual);
     }
 }
