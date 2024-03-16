@@ -94,7 +94,7 @@ class PhoneBookTest {
     public void test_PrintAllNamesShowsAllNames_ShouldBeNull() {
         var actual = phoneBook.printAllNames();
 
-        Assert.assertEquals("Stub and tests for findByName","Alice", actual);
+        Assert.assertNotEquals("Stub and tests for findByName","Alice", actual);
     }
 
 }

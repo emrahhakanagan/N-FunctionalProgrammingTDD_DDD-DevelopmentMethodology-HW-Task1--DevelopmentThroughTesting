@@ -37,6 +37,12 @@ public class PhoneBook {
 
 
     public String printAllNames() {
+        if (!contacts.isEmpty()) {
+            return contacts.keySet().stream()
+                    .sorted()
+                    .collect(Collectors.joining(", "));
+        }
+
         return null;
     }
 // printAllNames method implemented
