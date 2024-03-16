@@ -20,5 +20,10 @@ public class PhoneBook {
     }
 // add method implemented
 
+    public String findByNumber(String number) {
+        return null;
+    }
+// findByName method implemented
+
 
 }
