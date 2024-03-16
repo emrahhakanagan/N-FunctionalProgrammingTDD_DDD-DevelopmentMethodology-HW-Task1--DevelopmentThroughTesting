@@ -30,7 +30,7 @@ public class PhoneBook {
 // findByNumber method implemented
 
     public Boolean findByName(String name) {
-        return false;
+        return contacts.containsKey(name);
     }
 // findByName method implemented
 

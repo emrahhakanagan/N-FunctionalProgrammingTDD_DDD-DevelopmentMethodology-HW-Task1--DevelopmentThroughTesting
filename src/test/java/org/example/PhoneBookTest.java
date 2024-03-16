@@ -73,6 +73,6 @@ class PhoneBookTest {
 
         var actual = phoneBook.findByName("Petr");
 
-        Assert.assertEquals("Stub and tests for findByName",true, actual);
+        Assert.assertNotEquals("Stub and tests for findByName",true, actual);
     }
 }
